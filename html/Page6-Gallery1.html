@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1 style="font-family:Times"> Photo Gallery</h1>
+  <h2 style="font-family:Times"> Simulate your taste buds:</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://www.casalunahotel.com/wp-content/uploads/2014/07/home-luna-grill-01-768x512.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.casalunahotel.com/wp-content/uploads/2015/05/cl-experiences-wet-bar-03-768x512.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.casalunahotel.com/wp-content/uploads/2014/07/home-luna-grill-07-768x512.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.casalunahotel.com/wp-content/uploads/2014/07/home-luna-grill-08-768x512.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+ <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ae/c7/ca/20170130-132626-largejpg.jpg" alt="The Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i0.wp.com/www.undiscoveredguyana.com/wp-content/uploads/2020/01/80522136_2470191953256640_4395098157789216768_o-1.jpg?fit=600%2C401" alt="The Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.casalunahotel.com/wp-content/uploads/2014/07/home-luna-grill-05-1024x683.jpg" alt="The Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/37/ca/d8/awesome-stay.jpg" alt="The Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+   <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2019/03/uyiuur978051-613x345.jpg" alt="The Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://therantingpanda.files.wordpress.com/2014/08/img_6798.jpg" alt="The Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.guyanadining.com/wp-content/uploads/2014/07/FriedFish16.jpg" alt="The Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/GGv3aoIV3Y7IlMgoo7Ug04sRS7aUCzKWfw7KPN-YR54Mr_3U6o0ICWKtrRB1F82-7u2YU2RJL6xkf8ONVIwaiFK9PtouebpkldbYq6sVKiTSBkYMoZK-l0Ky" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://guyanachronicle.com/wp-content/uploads/2015/11/dinner1.jpg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/318/31851085.jpg" alt="The Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://guyanachronicle.com/wp-content/uploads/2015/11/Dish.jpg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://wilderness-explorers.com/wp-content/uploads/2016/01/image20-425x300.jpg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+  <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://i0.wp.com/www.thingsguyana.com/wp-content/uploads/2019/01/20150726_170524-1.jpg?resize=950%2C509&ssl=1" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.guyanadining.com/wp-content/uploads/2015/06/Boiled-and-fried-channa.jpg" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/37518602.jpg?k=bd0a81f17d74e027a410821021959e9ccf6ecbd4e1f6003edfe30784678a1fcf&o=" alt=Herdmanston Lodge"" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i0.wp.com/www.thingsguyana.com/wp-content/uploads/2019/06/IMG_7009.jpg?fit=1200%2C800&ssl=1" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/15/21/70/JTaQ6IgeQwG0MY6cjO2g_1415850927098.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://guyanatimesgy.com/wp-content/uploads/2020/01/85c0a5d3afcbfa3d2ad09debfe570989-guyanese-recipes-guyana-1.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/UyB7ugxX8Bk/maxresdefault.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i1.wp.com/www.thingsguyana.com/wp-content/uploads/2016/07/IMG_6420.jpg?resize=950%2C509&ssl=1" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/c5/ff/67/c5ff6724b4f72af84a2229cf1721ce5a.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://photos.smugmug.com/South-America/Guyana/i-zTBvGVG/0/7afdaa5f/728x485/cassava%20bread%20in%20guyana-728x485.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i2.wp.com/www.thingsguyana.com/wp-content/uploads/2019/09/plantain-chips-e1569628928150.jpg?resize=649%2C509&ssl=1" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.howsweeteats.com/wp-content/uploads/2011/04/bbqburgers-6.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+  <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/122/122658429.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://ihg.scene7.com/is/image/ihg/Boutique_Hotel_Breakfast_Table_Jan2020_2880x1440?qlt=85,0&resMode=sharp2&op_usm=1.75,0.9,2,0" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://img-global.cpcdn.com/recipes/1a4f3ad4f8179f52/751x532cq70/chapati-and-minji-with-beef-stew-recipe-main-photo.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://airportsandhotelsblog.files.wordpress.com/2019/02/hotel-breakfast-rules.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+ <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://images-gmi-pmc.edge-generalmills.com/948300ac-d5dc-4314-a85b-98de7d0990b9.jpg" alt="Splashmins Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://modules.marriott.com/resourcefiles/geomc-guyana-marriott-hotel-georgetown-5695832-main/geomc-terramare-menu02.jpg" alt="Splashmins Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/d1/f4/18/l-hotel-causeway-bay.jpg" alt="Splashmins Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/vegan_meringues_09863_16x9.jpg" alt="Splashmins Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+ <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/82/a3/cb/the-grand-hotel-luncheon.jpg" alt="Rock View Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/034/512/medium/pixta_24832209_S_s.jpg?2019" alt="Rock View Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://hotelnewyork.com/wp-content/uploads/sites/4/2017/07/Hotel_New_York_Rotterdam_Lunch_1.jpg" alt="Rock View Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/1c/05/05/grand-hotel-lunch-buffet.jpg" alt="Rock View Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+ <!--next one-->
+  <div class="row">
+  <div class="column">
+    <img src="https://curtisshotel.com/wp-content/uploads/2017/11/NY633BKfast1-e1510879439841.jpg" alt="Rewa Eco Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://bhgp.bayviewhotels.com/wp-content/uploads/sites/177/2019/05/Sunday-Buffet-3-1400x700.jpg" alt="Rewa Eco Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.whatsuplife.in/hyderabad/blog/wp-content/uploads/2016/09/Dinner-Buffet-In-Hyderabad.jpg" alt="Rewa Eco Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/9b/00/c9/barbeque-nation.jpg" alt="Rewa Eco Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

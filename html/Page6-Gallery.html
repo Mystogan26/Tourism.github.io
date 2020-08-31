@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1 style="font-family:Times"> Photo Gallery</h1>
+  <h2 style="font-family:Times">Experiences Preserved in Photos:</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/529/52967020.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/529/52966997.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/529/52967008.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/529/52967022.jpg" alt="Guyana Marriot Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://thumbnails.trvl-media.com/TDpf7nVofB7eBorTsmmdeLIJqNA=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/18000000/17430000/17421000/17420956/6d0f4d0e_z.jpg" alt="Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://newssourcegy.com/wp-content/themes/main/timthumb.php?src=https%3A%2F%2Fnewssourcegy.com%2Fwp-content%2Fuploads%2F2015%2F12%2F12324977_10207856290982795_2105231591_n.jpg&q=90&w=795&zc=1" alt="Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/17/18/1e/7a/aruwai-resort-white-h2o.jpg" alt="Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://www.undiscoveredguyana.com/wp-content/uploads/2016/07/1462652_1651773841765126_1472208835650423631_o.jpg" alt="Aruwai Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="https://i2.wp.com/www.thingsguyana.com/wp-content/uploads/2019/01/D75A8663-Edi_web.jpg?resize=950%2C509&ssl=1" alt="Ramada Georgetown Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://static.travelagewest.com/i/sized/780/437/media.iceportal.com/66530/photos/60166068_XL.jpg" alt="Ramada Georgetown Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/611/61121682.jpg" alt="Ramada Georgetown Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://www.worldcasinodirectory.com/assets/images/pop_images/height/600/hotels/21799_8315987_6_z.jpg" alt="Ramada Georgetown Princess Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/NbOUEA7qC0iecgoSqKsTPlR5whuq9JFtzObriwtyMdmP72CqkZsDhL4tKxjb3tPVoSOITP20L7w2qExt6_4F6SESeejX" alt="Jubilee Water Park & Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/WuF8AVYYW8M/maxresdefault.jpg" alt="Jubilee Water Park & Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/ce7YsUVW2_UVuCbzXWg_0I0pPTotDodfj4NmoZJWCNPsENcg_wI1U3bPNAFyey45cfjRCPvzKiuQZAyZ6OxTPNSGc79ruA" alt="Jubilee Water Park & Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://exploreguyana.org/wp-content/uploads/cache/images/2020/03/P1160422/P1160422-3786169098.jpg" alt="Jubilee Water Park & Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/7d/27/0a/lake-mainstay-resort.jpg" alt="Lake Mainstay Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Mainstay_Lake_-_panoramio_%281%29.jpg" alt="Lake Mainstay Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/57/09/1c/lake-mainstay-resort.jpg" alt="Lake Mainstay Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://thumbnails.trvl-media.com/HrQnEbMMAhVfOM4A402_9VjiYJA=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/20000000/19830000/19821500/19821498/800aee64_z.jpg" alt="Lake Mainstay Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn.ostrovok.ru/t/640x400/second/73/80/7380f03b4f3f6986e657ba89bfc393e1b8d8b2c3.jpeg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://caribbeannewsworld.com/wp-content/uploads/2018/10/3589_MG_9776-Medium.jpg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://static.travelweekly.com/i/sized/780/437/images.ntmllc.com/v4/Hotel/258/258180/258180_LOB_ZD9D3C.JPG" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+   <div class="column">
+    <img src="https://whatshappeningguyana.com/wp-content/uploads/2019/12/12657223_914841201903405_5193670593122070671_o-1024x681-1.jpg" alt="El Dorado Inn" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media.datahc.com/HI99549962.jpg" alt="El Dorado Inn" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/219/21932981.jpg" alt="El Dorado Inn" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.dagron-tours.com/media/images/hotels/el-dorado-hotel.jpg" alt="El Dorado Inn" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://res.cloudinary.com/resortsandlodges/image/fetch/w_800,h_520,c_fill/https://media.travelnetsolutions.com/b0cd679d9e45f48aa8445147542b2cd6/original.jpg" alt="The Pegasus Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+   <div class="column">
+    <img src="https://cdn.ostrovok.ru/t/640x400/content/da/36/da36cf4ac5f05dd2cb9325061c0b2f2de80b8bc2.jpeg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/340/34034509.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media.datahc.com/HI99549890.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/e0/9f/a1/grand-coastal-inn.jpg" alt="Grand Coastal Hotel" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/37519180.jpg?k=5e03dac3c4b5fa56817addea7ffaca9a323f5742472b6acdd39ea53d69711d94&o=" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/36576844.jpg?k=71f0272eb59636bebf6cda93ef12314ae15f9dac00b11fe29fe36c7fa25988ca&o=" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/36576795.jpg?k=ec01c39fdbb9c77feb9dd955d65c1e5aae30aded9df216c55ece6ac78fad7947&o=" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-fa.bstatic.com/xdata/images/xphoto/1920x810/36576791.jpg?k=b6b2b4e23293e726cd25a9f2a5213f5898ef1f5eeac13b3011d96825e12d91b8&o=" alt="Herdmanston Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+    <div class="column">
+    <img src="https://aff.bstatic.com/images/hotel/max500/102/102497000.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/d4/f4/33/roraima-duke-lodge.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/05/58/5b/2b/roraima-duke-lodge.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/d4/f3/15/roraima-duke-lodge.jpg" alt="Roraima Duke Lodge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1280x900/566/56619225.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://q-cf.bstatic.com/images/hotel/max1280x900/566/56619222.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/566/56619223.jpg" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://i2.wp.com/www.thingsguyana.com/wp-content/uploads/2018/12/baganara-island-resort_2_relax-on-the-beach-baganara-island.jpg?resize=950%2C509&ssl=1" alt="Baganara Island Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="row">
+  <div class="column">
+      <img src="https://i1.wp.com/www.thingsguyana.com/wp-content/uploads/2018/09/maxresdefault-1.jpg?resize=950%2C509&ssl=1" alt="Arrowpoint Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.allforonetravel.com/wp-content/uploads/2017/09/Arrowpoint-Lodge-2.jpg" alt="Arrowpoint Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/d4/f9/cd/arrowpoint-resort.jpg" alt="Arrowpoint Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/15NxKDvJUXCH8lscZHUc9zM_RbMJSzfRFhP0mg0-LpV0rKNahzQbc_-IKxkK_dRMyxRD8t3oxsz1qGhJLJ06xqmQ97lOCFHdXCxD-AV9_tjatZs" alt="Arrowpoint Resort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Container Code-->
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<!--Script Function-->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

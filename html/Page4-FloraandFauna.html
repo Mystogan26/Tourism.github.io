@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Page 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+<style>
+
+/*remove the navbar's default rounded borders and increase the bottom margin*/ 
+.navbar {
+	margin-bottom: 50px;
+	border-radius: 0;
+}
+    
+/*remove the jumbotron's default bottom margin*/ 
+.jumbotron {
+	margin-bottom: 0;
+}
+
+/*style the header*/
+.jumbotron{
+	background-color:#D5F5E3;
+	padding: 0px;
+	font-family:Times New Roman;
+	font-size:12px;
+	font-weight: bold;
+	color: black;
+}
+
+
+.heading{
+	background-color: #73C6B6;
+	color: white;
+	padding: 10px;
+	text-align:center;
+	width: 100%;
+}
+
+
+.heading2{
+	background-color: #C39BD3;
+	color: white;
+	padding: 10px;
+	text-align:center;
+	width: 100%;
+}
+
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+
+/*slideshow container*/
+.slideshow-container {
+	max-width: 650px;
+	position: relative;
+	margin: auto;
+}
+
+
+/*Next & previous buttons*/
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+
+/*position the "next button" to the right*/
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/*on hover,add a grey background color*/
+.prev:hover, .next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+
+/*container for image text*/
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 25px 16px;
+	color: black;
+}
+
+
+/*caption text*/
+.text {
+	color: black;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom:-70px;
+	width: 100%;
+	text-align: center;
+}
+
+
+/*style buttons*/
+.btn {
+	background-color: #73C6B6; /* Blue-ish background */
+	border: none; /* Remove borders */
+	color: white; /* White text */
+	padding: 12px 16px; /* Some padding */
+	font-size: 16px; /* Set a font size */
+	cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+/*darker background on mouse-over*/
+.btn:hover {
+	background-color: RoyalBlue;
+}
+
+
+/*footer*/
+.footer {
+	background-color: white;
+	padding: 25px;
+}
+
+
+/*pagination*/
+.pagination {
+	display: inline-block;
+}
+
+
+/*pagination*/
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	margin: 0 4px;
+}
+
+
+/*pagination*/
+.pagination a.active {
+	background-color:#ABEBC6;
+	color: black;
+	border: 1px solid #ABEBC6 ;
+}
+
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="jumbotron">
+<div class="container text-center">
+<h1>Flora and Fauna</h1>    
+<p style="text-align:center;">Visit Our Well Preserved Natural Ecosystems</p>
+</div>
+</div> 
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+
+    <a class="navbar-brand" href="#">Visit</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+    <li><a href="https://www.guyanatourism.com/guyanas-beautiful-floral-landscape/" target="_blank">Guyana's Floral Landscape</a></li>
+    <li><a href="https://www.guyanatourism.com/top-wildlife-encounters-in-guyana/" target="_blank">Nation's Wildlife</a></li>
+	<li><a href="https://guyaneseonline.files.wordpress.com/2013/06/traditional-home-remedies-of-guyana.pdf" target="_blank">Traditional Home Remedies</a></li>
+    </ul>
+	
+</div>
+</nav>
+
+
+
+<img src = "../images/theguyanazoo.jpg" alt="Image not found" class="center" /> 
+<br>
+<p style="text-align:center" > The plant and animal life in Guyana is extremely unique. It includes various one-of-a-kind species of flora and fauna,
+ where plants are not only used for the purpose of beautifying, but for medicine as well.</p>
+	
+	
+<h2 style="text-align:center" class="heading2">Animals</h2>
+<br>
+<div class="slideshow-container">
+<div class="mySlides1">
+<img src="../images/leatherbackturtle.jpg" width= "654" height="450" alt="Turtle">	
+<br>
+<br>
+<div class="text">Leatherback Turtle: With a length from 1.8 to 2.2 meters, this turtle is the largest of all living turtles weighing from 250 to
+ 700 kg as an adult. Their primary food is jellyfish along with mollusks, squid and sea urchins.</div>   
+</div>
+
+<div class="mySlides1">
+<img src="../images/sunparakeet.jpg" width= "654" height="450" alt="Sun">
+<br>
+<br>
+<div class="text">Sun Parakeet: Known as the sun conure, the sun parakeet is a medium-sized parrot that is vibrantly colored with a golden-yellow
+ plumage and orange-flushed face and underparts. It weighs about 100 grams with a length of 30 cm.</div>
+</div>
+
+<div class="mySlides1">
+<img src="../images/jaguar.jpg" width= "654" height="450" alt="Jaguar">
+<br>
+<br>
+<br>
+<div class="text">Jaguar: The jaguar is the 3rd largest of the big cats, after the tiger and the lion. It comes from the indigenous word "jaguar", 
+which translates to "he kills with one leap". They have the strongest jaw structure of any feline. Although their appearance is like the leopards, 
+their behavior is like the tigers.</div>
+</div>
+  
+<div class="mySlides1">
+<img src="../images/arapaima.jpg" width= "654" height="450" alt="Fish">
+<br>
+<br>
+<br>
+<div class="text">Arapaima: This fish the the largest freshwater fish in the world. It weighs up to 440 pounds and up to 10 feet in length.
+ The arapaima is a very unique fish as it can breathe air. They can take up oxygen through their gills but live in oxygen poor waterways and
+ supplement with air breathing.</div>
+</div>
+
+<div class="mySlides1">
+<img src="../images/capybara.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Capybara: This giant rodent is the largest living rodent in the word. Weighing up to 66 kg and a height of 64 cm, they are
+ known as strong swimmers like beavers. Their bodies are adapted for waterways in the forests, flooded savannahs and wetlands.</div>
+</div>
+  
+<div class="mySlides1">
+<img src="../images/blackcaiman.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Black Caiman:Living up to 30 to 40 years in the wild, black caimans 14 feet in length. They are slower moving on land whereas 
+in the water, they can travel extremely fast despite their heavy bodies and slow metabolism.</div>
+</div>
+
+<div class="mySlides1">
+<img src="../images/giantanteater.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Giant Anteater: Known as the ant bear, the giant anteater, like other anteaters, are edentate animals; they have no teeth. However, 
+their long tongues allow them to swallow about 35,000 ants and termites every day. They live an average of 15 years.</div>
+</div>
+  
+<div class="mySlides1">
+<img src="../images/harpyeagle.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Harpy Eagle: Taller than bald eagles, harpy eagles measure a height of 41 inches and weighs up to 20 pounds. Their diet includes
+ tree-dwelling mammals such as sloths, monkeys, squirrels and iguanas. These eagles reside in the Amazon forest.</div>
+</div>
+
+<div class="mySlides1">
+<img src="../images/cockoftherock.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Cock-of-the-rock: This bird gets it name from its tendency to build nests on rocks and ledges. Their diet consists mainly of fruit 
+and insects and small reptiles. They have a number of predators including jaguar, puma and the ocelot.</div>
+</div>
+  
+<div class="mySlides1">
+<img src="../images/giantriverotter.jpg" width= "654" height="450" alt="Animal">
+<br>
+<br>
+<div class="text">Giant River Otter: This otter is the longest member of the weasel family, reaching up to 1.7 metres. They are excellent swimmers 
+and divers because of their short, webbed feet and flattened tail. They have small ears and nostrils which close after diving under water.</div>
+</div>
+  
+<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<br>
+<br> 
+<br>
+
+
+<h2 style="text-align:center" class="heading2">Plants</h2>
+<br>
+<div class="slideshow-container">
+<div class="mySlides2">
+<img src="../images/victorialily.jpg" width= "654" height="450" alt="Plant">
+<br>
+<br>
+<div class="text">Victoria Regia Lily: Seen on the Guyana Coat of Arms, this is the national flower of Guyana. It is the largest of water lilies.
+ Their leaves are extremely strong and can hold a small human weighing up to 65 pounds.</div>
+</div>
+
+<div class="mySlides2">
+<img src="../images/cannonballtree.jpg" width= "654" height="450" alt="Plant">
+<br>
+<br>
+<div class="text">Cannonball Tree: This tropical tree is large and deciduous and can grow up to 35 metres in height. Its fruit can be eaten by 
+humans but it is not generally done as it has an unpleasant smell. However, they are fed to livestock.</div>
+</div>
+
+<div class="mySlides2">
+<img src="../images/sacredflower.jpg" width= "654" height="450" alt="Plant">
+<br>
+<br>
+<div class="text">Sacred Lotus: This lotus is regarded as sacred in India, Guyana and Egypt.It symbolizes the purity of heart and mind and 
+represents long life, health and good luck. The leaves are used in Guyana as plates by Hindus in religious processes.</div>
+</div>
+  
+<div class="mySlides2">
+<img src="../images/carrioncrowbush.jpg" width= "654" height="450" alt="Plant">
+<div class="text">Carrion-Crow Bush: Also known as a medicinal plant, this bush is an ornamental flowering plant. It is also known as the 
+emperor's candlesticks and ringworm shrub.</div>
+</div>
+  
+<div class="mySlides2">
+<img src="../images/jacaranda.jpg" width= "654" height="450" alt="Plant">
+<div class="text">Wakenaam Lilac: Jacaranda, known as the Wakenaam lilac in Guyana, has a mild sweet honey smell. However when dropped on 
+sidewalks, they can become slippery when smeared.</div>
+</div>
+  
+<div class="mySlides2">
+<img src="../images/staghornfern.jpg" width= "654" height="450" alt="Plant">
+<div class="text">Staghorn: This type of fern is known for its uniquely shaped fronds. With proper care, they can live up to 90 years of age.</div>
+</div>
+
+<div class="mySlides2">
+<img src="../images/maidenhairfern.jpg" width= "654" height="450" alt="Plant">
+<div class="text">Maidenhair: This type of fern is known for its fronds to shed water without becoming wet. Their intolerance to dry soil is 
+what causes them to shrivel up and die.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<br> 
+<br> 
+<br>
+
+
+<h2 style="text-align:center" class="heading2">Bush Medicine</h2>
+<br>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="../images/fevergrass.jpg" width= "654" height="450" alt="Plant">
+	<br>
+	<br>
+	<div class="text">Fever Grass: Widely known as lemon grass, this plant's leaves and oil are used to make medicine. It treats stomach aches,
+	high blood pressure, vomiting, achy joints, fever, the common cold and exhaustion.</div>
+  </div>
+
+  <div class="mySlides3">
+    <img src="../images/grannybackbone.jpeg" width= "654" height="450" alt="Plant">
+	<div class="text">Granny Backbone: This is a climbing fern where the leaves and stems are used to make a herbal bark tonic. This tonic 
+	treats erectile dysfunction.</div>
+  </div>
+
+  <div class="mySlides3">
+    <img src="../images/sarsaparilla.jpg" width= "654" height="450" alt="Plant">
+	<div class="text">Sarsaparilla: Known as a soft drink similar to root beer, this plant is also used for treating psoriasis, rheumatoid 
+	arthritis and kidney disease.
+</div>
+  </div>
+  
+  <div class="mySlides3">
+    <img src="../images/curare.jpeg" width= "654" height="450" alt="Plant">
+	<div class="text">Curare: found in the amazonian basin, this plant is used a muscle relaxant is used in anesthesia.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<br> 
+<br>
+<br>
+<script>
+
+
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3",]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<footer class="container-fluid text-center">
+<div class="center">
+<div class="pagination">
+
+	<a href="#">&laquo;</a>
+	<a href="../index.html">Page 1</a>
+	<a href="Page2-EcologicalWonders.html">Page 2</a>
+	<a href="Page3-CalendarofActivities.html">Page 3</a>
+	<a href="Page4-FloraandFauna.html"class="active">Page 4</a>
+	<a href="Page5-Monuments,LandmarksandForts.html">Page 5</a>
+	<a href="Page6-Hotels&Resorts.html">Page 6</a>
+	<a href="#">&raquo;</a>
+
+
+<!--This page was designed by Vilinie Singh-->
+</body>
+</html> 

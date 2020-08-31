@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Guyana</title>
+    <script src="https://kit.fontawesome.com/164d73c259.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      .container {
+        margin-left: 10%;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .sidenav {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 140px;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        left: 10px;
+        background: green;
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+      img {
+        height: 15%;
+        width: 75%;
+      }
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 100%;
+        color: white;
+        display: block;
+      }
+      .sidenav a:hover {
+        color: black;
+      }
+      .main {
+        margin-left: 140px; 
+        font-size: 28px; 
+        padding: 0px 10px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      * {box-sizing: border-box;}
+      body {font-family: 'Times New Roman', Times, serif;}
+      .mySlides {display: none;}
+      img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 75%;
+        position: relative;
+        margin: auto;
+      }
+      /* Caption text */
+      .text {
+        color: white;
+        font-size: 25px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+/* Number text (Did you know?) */
+      .numbertext {
+        color: white;
+        font-size: 25px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+/* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active {
+        background-color: #717171;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 10%;
+      }
+      .video {
+        text-align: center;
+      }
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+/* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+
+      Social-media {
+
+        overflow: auto;
+        text-align: center;
+      }
+      .Social-media a{
+        float: left;
+      }  
+      .facebook {
+        color: red;
+        border: none;
+        background-color: white;
+        font-size: 40px;
+      }  
+      .instagram {
+        border: none;
+        color: yellow;
+        background-color: white;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+      <img src="images/coatofarms.png" alt="Coat of Arms">
+      <a href="html/Page2-EcologicalWonders.html">Ecological Wonders</a>
+      <a href="html/Page3-CalendarofActivities.html">Calendar of Activities</a>
+      <a href="html.Page4-FloraandFauna.html">Wildlife in Guyana</a>
+      <a href="html/Page5-Monuments,LandmarksandForts.html">Landmarks and Forts</a>
+      <a href="html/Page6-Hotels&Resorts.html">Hotels and Accommodations</a>
+    </div>
+    <div class="container">
+      <img src="images/flagguyana.png" style="width: 100%; height: 120px;" alt="Flag of Guyana">
+      <div class="centered"><h1>Guyana</h1>
+      <h3>Come experience nature's paradise!</h3>
+      </div>
+    </div>
+  <br>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">Did you know?</div>
+      <img src="images/file.jpg" style="width:100%; height: 300px;" alt="City">
+      <div class="text">In 1977, the Guyana Defence Force hired its first two women pilots: Cheryl Pickering-Moore and Beverley Drake</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">Did you know?</div>
+      <img src="images/tourism.jpg" style="width:100%; height: 300px;" alt="Nature">
+      <div class="text">Guyana is home to more than 900 species of birds; 225 species of mammals; 880 species of reptiles and more than 6,500 different 
+        species of trees and plants.</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">Did you know?</div>
+      <img src="images/stadium.jpg" style="width:100%; height: 300px;" alt="Sports">
+      <div class="text">The major sports in Guyana are cricket (Guyana is part of the West Indies as defined for international cricket purposes) 
+        basketball, football, and volleyball.</div>
+      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">Did you know?</div>
+      <img src="images/oil.jpg" style="width:100%; height: 300px;" alt="Oil">
+      <div class="text">Guyana finds oil! Petroleum production in Guyana is effecting a major boost to the economy of Guyana. The well may start producing by the end of the decade, 
+        could potentially produce 700 million barrels of oil equivalent — that would make it worth $40 billion at today's international crude price.</div>
+      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">Did you know?</div>
+      <img src="images/hotel.jpg" style="width:100%; height: 300px;" alt="Hotels">
+      <div class="text">Guyana Carnival is a privately owned festival in Georgetown Guyana, during May 20th – 27th. It’s an amalgamation of influential entertainment bodies, 
+        the Government of Guyana and other key stakeholders to create a new exciting product to boost tourism, entertainment, and nightlife in our emerging city.</div>
+    </div>
+    </div>
+  <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <p>
+      Guyana, country located in the northeastern corner of South America. Indigenous peoples inhabited Guyana prior to European settlement, and 
+      their name for the land, guiana (“land of water”), gave the country its name. Present-day Guyana reflects its British and Dutch colonial past 
+      and its reactions to that past. It is the only English-speaking country of South America. Since Guyana gained its independence in 1966, the country’s 
+      chief economic assets have been its natural resources, mainly its pristine rainforests, sugarcane plantations, rice fields, and bauxite and gold reserves. 
+      Despite those riches, Guyana remains one of the poorest countries in South America. Some geographers classify Guyana as a part of the Caribbean region, 
+      which they deem to include the West Indies as well as Guyana, Belize, Suriname, and French Guiana on the South American mainland. The capital and chief port 
+      of Guyana is Georgetown.
+    </p>
+    <div class="video">
+    <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/PhHixzJc908" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Where is Guyana located?</h2>      
+    <p>Guyana is bordered by the Atlantic Ocean to the north, by Suriname (along the Courantyne River) to the east, by Brazil to the south and southwest, and by 
+      Venezuela to the west. Guyana is involved in territorial disputes with both Suriname and Venezuela that are legacies of colonial rule. Although a United Nations 
+      international tribunal settled a long-standing maritime boundary dispute between Guyana and Suriname in 2007, the latter still claims the New River Triangle, 
+      a 6,000-square-mile (15,600-square-km) area between two tributaries of the Courantyne River in southern Guyana. The currently recognized border between Suriname 
+      and Guyana along the Courantyne is also in contention—Suriname claims sovereignty over the entire river and thus views its west bank as the border, while Guyana 
+      claims that the thalweg, or deepest channel of the river, is the boundary. The dispute between Guyana and Venezuela dates from 1895, when the British government 
+      claimed ownership of the Essequibo River basin. An 1899 settlement awarded Venezuela part of the area, but in 1962 Venezuela claimed all the territory west of the 
+      Essequibo.</p>      
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4070399.691168714!2d-61.197658554857014!3d4.939687658868131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafefaf60d8c2b3%3A0x48e38867b6e54440!2sGuyana!5e0!3m2!1sen!2sgy!4v1582468916217!5m2!1sen!2sgy" width="1000px" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>  
+    </div>
+    <div class="Social-media">
+      <a href="https://www.facebook.com/gotoguyana/?ref=br_rs" target="_blank">
+        <button class="facebook"><i class="fab fa-facebook"></i></button>
+      </a>
+      <a href="https://www.instagram.com/visitguyana/" target="_blank">
+        <button class="instagram"><i class="fab fa-instagram-square"></i></button>
+      </a>
+    </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+
+<!--This page was designed by Samuel Ramjattan-->
+
+
+  </body>
+</html>

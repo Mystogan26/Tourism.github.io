@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Page 5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+
+
+
+/*remove the navbar's default rounded borders and increase the bottom margin*/ 
+.navbar {
+	margin-bottom: 50px;
+	border-radius: 0;
+}
+    
+/*remove the jumbotron's default bottom margin*/ 
+.jumbotron {
+	margin-bottom: 0;
+}
+
+/*style the header*/
+.jumbotron{
+	background-color:#FBEEE6;
+	padding: 0px;
+	font-family:Times New Roman;
+	font-size:12px;
+	font-weight: bold;
+	color: black;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 .mySlides3 .mySlide4{display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Platform Web", "Helvetica Neue" sans-serif}
+
+.w3-bar,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*add a white background color and some padding to the footer */
+	footer {
+	background-color: white;
+	padding: 25px;
+}
+.center {
+	text-align: center;
+}
+
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	margin: 0 4px;
+}
+
+
+.pagination a.active {
+	background-color:#F6DDCC ;
+	color: black;
+	border: 1px solid #F6DDCC ;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+</style>
+<body>
+
+<!--Header-->
+<div class="jumbotron">
+<div class="container text-center">
+<h1 style="font-family:Times;" class="w3-margin w3-jumbo">Monuments,Landmarks and Forts</h1> 
+<h2 style="font-family:Times;" class="w3-xlarge">Discover Guyana, Our world is your playground.</h2> <p style="text-align:center;"> </p>
+</div>
+</div> 
+<!--Navigation Bar-->
+
+<nav class="navbar navbar-inverse navbar-center ">
+<div class="container-fluid">
+<div class="navbar-header">
+
+    <a class="navbar-brand">Visit</a>
+	<a class="navbar-brand" href="https://www.viator.com/Guyana/d22314-ttd"target="_blank">Book Trips</a>
+	<a class="navbar-brand" href="https://www.europcar.com/en/car-rental/locations/guyana"target="_blank">Car Rentals</a>
+	<a class="navbar-brand" href="Page5-Directions.html"target="_blank">Directions</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+    <li><a href="#"> </a></li>
+   
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<p> </p>
+
+<a href="#footer">Bottom of page</a>
+<!-- First Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+	<h1> LANDMARKS </h1>
+	
+	<p> </p>
+
+      <h2>1. St George's Catherdal </h2>
+      <p class="w3-padding-32">Located in the heart of the city. Georgetown’s most impressive building is also one of the tallest wooden churches in the world.  </p>
+	  
+     	 <p class="w3-text-black">Apart from its notable wooden construction, St. George’s Cathedral is an important and much-loved landmark in the Guyanese capital of Georgetown for two reasons: most locals would agree that it’s the most impressive building in the capital, and anyone with an eye for history can see how the cathedral is a window into Guyana’s colonial past.</p>
+<!--Slideshow-->
+<div class="slideshow-container">
+  <div class="mySlides1">
+     <img src="https://www.guyanatourism.com/wp-content/uploads/2019/01/St.-Georges-Cathedral_Georgetown_DavidDiGregorio.jpeg" width= "654" height="520" alt="Tourism">
+	 </div>
+  <div class="mySlides1">
+     <img src="https://wanderingtrader.com/wp-content/uploads/2011/06/st.-georges-cathedral.jpg" width= "654" height="520" alt="Trader"> 
+     </div>
+
+  <div class="mySlides1">
+      <img src="https://i.pinimg.com/originals/d4/b6/96/d4b69615ddb2f0c9d6930ff665c6facf.jpg" width= "654" height="520" alt="Ping"> 
+	  </div>
+  
+<!--Button Format--> 
+   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+	<p> </p>
+	<p> </p>
+	
+	<h2>2. The Chateau Margot Chimney </h2>
+      <p class="w3-padding-32">The Chateau Margot Chimney is one of the most well-known landmarks on the Demerara coast, situated 8 miles away from Georgetown, adjacent to the public road in its namesake village Chateau Margot, with the villages of Success to the west and La Bonne Intention (LBI) to the east.  </p>
+	  
+     	 <p class="w3-text-black"> The chimney’s construction was completed on July 1st, 1889 and was done by a Buxtonian brick layer by the name of Anthony Gordon. It is made completely of red bricks, standing on a large concrete base.The Chateau Margot Chimney would appear to be the only remains of a former sugar factory that was built on the land it is currently situated on; however despite its functions during the time of the operation of the sugar factory, it was also used as a beacon for ships approaching Port Georgetown. </p>
+		 <img src="https://i1.wp.com/newsroom.gy/wp-content/uploads/2016/11/8460372868_ee3b5bcccc_b.jpg?fit=1024%2C682&ssl=1" width= "654" height="520" alt="Chimney">
+	
+	<p> </p>
+	<p> </p>
+	
+	<h2> 3. The Umana Yana </h2>
+	<p class="w3-padding-32"> The Umana Yana, once an iconic and popular structure in Kingston, Georgetown, its Wai Wai name translated into English as “meeting place of the people”</p>
+	
+		<p class="w3-text-black">The first Umana Yana to be built in the city of Georgetown was erected in 1972. It was designed by Guyanese architect, Mr. George Henry and was built on the site of the old Marine’s Club. The structure took 80 days to be completed.
+        Architecturally, the Umana Yana was a marvel. A benab of that size it was a unique building unfamiliar to foreign eyes, unfamiliar to city dwellers. It was as if someone took a huge conical chunk from the hinterland and set it down in the capital.		</p>
+		
+		<img src="https://guyaneseonline.files.wordpress.com/2010/10/umana-yana-building.png" width= "654" height="520" alt="Umana">
+	
+	<p> </p>
+	<p> </p>
+
+	<h2> 4. Stabroek Market</h2>
+	<p class="w3-padding-32"> In 1842, the Georgetown Town Council designated the current location of the market on Water Street, officially recognizing it as a market despite the fact that it had served such a capacity for quite some time</p>
+	
+		<p class="w3-text-black">The Stabroek Market area is easily the busiest such place in the city, always bustling with people and activity. It is a central hub for taxis and "minibuses", and also for ferries that transport people and goods from all towns and villages along the Demerara River.
+
+Stabroek Market is widely known as the biggest market location in Guyana, where many sellers go to make a living. The market has attracted a great variety of business owners, whose wares range from jewelry to clothes to produce. Stabroek Market is filled with customers everyday and is known for its clock located at the top of the building.
+
+Stabroek Market is located in the middle of what Guyanese people call "Town", where many other major businesses surround its tall and recognized building. Stabroek Market is one of Georgetown's main attractions and is renowned throughout Guyana. </p>
+
+<!-- Slideshow-->
+<div class="slideshow-container">
+  <div class="mySlides2">
+      <img src="https://s1.stabroeknews.com/images/2016/11/20161121Stabroek-Market-front.jpg" width= "654" height="520" alt="Market">
+	  </div>
+
+  <div class="mySlides2">
+      <img src="https://4.bp.blogspot.com/-s7Y4g09eVbg/VT08Wkh9GhI/AAAAAAAAZBY/1x3ESGrcUy0/s1600/GUYANA%2B-%2BStabroek%2BMarket%2Bin%2BGeorgetown.jpg" width= "654" height="520" alt="Market">
+	  </div>
+
+  <div class="mySlides2">
+      <img src="https://s1.stabroeknews.com/images/2014/01/20140125stabroek.jpg" width= "654" height="520" alt="Market"> 
+     </div>
+
+<!--Button Format--> 
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+	<p> </p>
+	<p> </p>
+	
+	<h2> 5. The 1763 Monument </h2>
+	<p class="w3-padding-32"> The 1763 Monument proudly stands in the Square of the Revolution in the Guyanese capital of Georgetown.</p>
+	
+		<p class="w3-text-black">Unveiled in 1976, it commemorates the Berbice Slave Rebellion of 1763, a major event in Guyana’s anti-colonial struggles.At the Lilienburg Plantation, a house enslaved person named Cuffy (variously Coffy, Kofi or Koffi) of West African origin joined the revolt. He became the leader of the rebellion, training the rebel forces to fight as a unit against the Dutch militia. He took the wife of the manager of Plantation Bearestyn as his wife, and soon declared himself Governor of Berbice.The figure of Cuffy bears many symbols: his pouting mouth is a sign of defiance; the face on his chest is a symbolic breastplate giving protection in battle; and the horned faces on his thighs represent revolutionaries from Guyanese history, including Quamina from the Demerara rebellion of 1823</p>
+
+      <img src="https://i1.wp.com/www.thingsguyana.com/wp-content/uploads/2016/07/IMG_6100.jpg?fit=1200%2C800&ssl=1" width= "654" height="520" alt="Monument">
+
+<!--Java Script-->
+
+</div>
+</div>
+</div>
+
+<body>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+     
+    </div>
+
+    <div class="w3-twothird">
+	<h1> FORTS</h1>
+	
+	<p> </p>
+      <h2>1. Fort Zeelandia</h2>
+      <h5 class="w3-padding-32">Fort Zeelandia is located on Fort Island, a fluvial island of the Essequibo River delta in the Essequibo Islands-West Demerara region of Guyana.</h5>
+
+      <p class="w3-text-black">Not to be confused with Fort Zeelandia in Paramaribo, Suriname, the current brick fort was built in 1743 for the Essequibo colony, replacing an earlier wooden fort built in 1726, and is among the oldest structures in Guyana. The fort replaced Fort Kyk-Over-Al as the capital of Essequibo in 1739.
+	  The small fort is a 15 x 20 m structure surrounded by four ramparts at each corner. Constructed during the Dutch possession of the region, the fort was a vital defensive fortification strategically located at the mouth of the Essequibo River.</p>
+<!--Slideshow-->
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="https://s1.stabroeknews.com/images/2017/12/Page1A10.jpg" width= "654" height="520" alt="Page">
+  </div>
+
+  <div class="mySlides3">
+    <img src="https://s27957.pcdn.co/wp-content/uploads/2018/08/fort-zeelandia-guyana.jpg" width= "654" height="520" alt="Page">
+  </div>
+
+  <div class="mySlides3">
+    <img src="https://i.ytimg.com/vi/Kw-D5O5DtXY/maxresdefault.jpg" width= "654" height="520" alt="Page">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+	<p> </p>
+	<p> </p>
+
+      <h2>2. Fort Kyk-Over-All</h2>
+      <h5 class="w3-padding-32">Fort Kyk-Over-Al was a Dutch fort in the colony of Essequibo, in what is now Guyana. It was constructed in 1616 at the intersection of the Essequibo, Cuyuni and Mazaruni rivers</h5>
+
+      <p class="w3-text-black"> It once served as the centre for the Dutch administration of the county, but now only ruins are left. The name Kyk-Over-Al derives from the Dutch for "See over all", a reference to the commanding view of the river from the fort. </p>
+
+	<img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzRjZjFjY2M5LTZkMjYtNDIwNi05NTBhLTBhYTY1YzAyZDhlZjlkOWMxMzBlZTkzNjZlNDk0OF9Gb3J0LUt5ay1PdmVyLUFsLTEuanBnIl0sWyJwIiwidGh1bWIiLCJ4MzkwPiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/Fort-Kyk-Over-Al-1.jpg" width= "654" height="520" alt="Page">
+	
+    <p> </p>
+	<p> </p>
+	
+	<h2>3. Fort Nassau</h2>
+      <h5 class="w3-padding-32">Fort Nassau was the capital of the Dutch colony of Berbice, in present-day Guyana.It was situated on the Berbice River approximately 88 kilometres upstream from New Amsterdam </h5>
+
+      <p class="w3-text-black">The settlement around Fort Nassau became a successful trading post. The Dutch bartered goods such as knives, hardware and cloth for tobacco and annatto.The original fort was burnt by the French when they attacked Berbice in 1712, but it was rebuilt by the Dutch. In 1733, a village which had sprung up around Fort Nassau was named New Amsterdam (Dutch: Nieuw Amsterdam). The fort was later destroyed by order of Governor Van Hoogenheim in 1763 to prevent its capture by the slaves during the Berbice Slave Uprising. </p>
+
+<!--Slideshow-->
+<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="https://rustytraveltrunk.com/wp-content/uploads/2016/03/Fort-Island-fort-1.jpg" width= "654" height="520" alt="Page">
+  </div>
+
+  <div class="mySlides4">
+    <img src="https://i0.wp.com/www.thingsguyana.com/wp-content/uploads/2019/04/IMG_7254.jpg?resize=830%2C553&ssl=1" width= "654" height="520" alt="Page">
+  </div>
+
+  <div class="mySlides4">
+    <img src="https://guyanachronicle.com/wp-content/uploads/2017/05/entrance.jpg" width= "654" height="520" alt="Page">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+</div>
+
+<a href="#top">Back to top of page</a>
+<a name="footer"></a>
+
+<!-- Java Script-->
+<script>
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+   
+  </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+<div class="center">
+<div class="pagination">
+
+	<a href="#">&laquo;</a>
+	<a href="../index.html">Page 1</a>
+	<a href="Page2-EcologicalWonders.html">Page 2</a>
+	<a href="Page3-CalendarofActivities.html">Page 3</a>
+	<a href="Page4-FloraandFauna.html">Page 4</a>
+	<a href="Page5-Monuments,LandmarksandForts.html"class="active">Page 5</a>
+	<a href="Page6-Hotels&Resorts.html">Page 6</a>
+	<a href="#">&raquo;</a>
+	
+<!--This page was designed by Malissa Grannum-->
+</footer>
+</body>
+</body>
+</html>
